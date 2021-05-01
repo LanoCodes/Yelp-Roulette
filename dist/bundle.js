@@ -640,7 +640,8 @@ class YelpClient {
 
   search(parameters){
     return this.send({
-      url: 'https://api.yelp.com/v3/businesses/search',
+      // adding in my proxy url for cors-anywhere at the beginning to workaround the cors issue...
+      url: 'https://lanoscorsproxy.herokuapp.com/https://api.yelp.com/v3/businesses/search',
       query: parameters,
       bearerToken: this.apiKey
     });
