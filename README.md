@@ -1,4 +1,5 @@
 # Yelp-Roulette
+[Yelp Roulette Site](http://yelp-roulette.me/Yelp-Roulette/)
 ### Requirements: 
 1. The user should be able to press a button to generate a restaurant in one click/touch.
 2. Interface should be very simply designed and very streamlined in presenting the restaurant information.
@@ -133,11 +134,10 @@
 1. Methods, Tools, and Techniques
 - Tools: 
     - Yelp's Fusion API
-    - GitHub Pages *Tentative/Finding alternative*
-    - Node.js
+    - GitHub Pages
     - HTML5, CSS, JS
     - Bootstrap
-    - *Tentative* Heroku
+    - Heroku
     - Namecheap
     - Browserify
     - NodeJS & npm
