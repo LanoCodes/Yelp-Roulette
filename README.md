@@ -141,6 +141,8 @@
     - Namecheap
     - Browserify
     - NodeJS & npm
+    - Atom Text Editor
+    - VS Code 
 
 2. Software Documentation
 - This repo will serve as the site for software documention. 

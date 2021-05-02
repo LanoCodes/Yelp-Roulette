@@ -752,11 +752,13 @@ function yelpRoulette() {
     // NOTE: Fusion docs says that it returns up to a 1000 business based on the search criteria. So, assuming that the criteria given allows for a full response with 1000 restaurants to choose from, the bounds for a random integer creater is from 0 - 999
     const firstResult = response.jsonBody.businesses[rando];
     const prettyJson = JSON.stringify(firstResult, null, 4);
-    // instead of logging to console like i did in testing.. im going to using .innerHTML and see what happens.
-    // I will need to first enclose the api call in one function to be able to call on this from index.html..
-    // console.log(prettyJson);
-    // this line may be become very necessary once i get the function properly structured
-    document.getElementById("show-roulette").innerHTML = prettyJson;
+
+    // var obj = JSON.parse(prettyJson);
+
+    // document.getElementById("show-roulette").innerHTML = prettyJson;
+    document.getElementById("show-roulette").innerHTML =  "You <em>must</em> now visit...." + '"' + firstResult.name + '!"';
+    console.log(firstResult);
+
   }).catch(e => {
     console.log(e);
   });
