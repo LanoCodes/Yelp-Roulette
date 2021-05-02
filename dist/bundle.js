@@ -755,7 +755,7 @@ function yelpRoulette() {
 
     document.getElementById("show-roulette").innerHTML =  "You must now visit....<br><br>" + '<h3><em>"' + firstResult.name + '!"</em></h3>';
     document.getElementById("show-roulette-image").innerHTML = '<img class="restaurant-image" src="' + firstResult.image_url +'" alt="restaurant image">';
-    document.getElementById("show-roulette-location").innerHTML = 'Head to: ' + firstResult.location.display_address;
+    document.getElementById("show-roulette-location").innerHTML = 'Head to: ' + firstResult.location.display_address + '<br> <em>Remember to leave a review after your visit on <a class="yelp-link" href="https://www.yelp.com/">Yelp!</a></em>';
     console.log(firstResult);
 
   }).catch(e => {

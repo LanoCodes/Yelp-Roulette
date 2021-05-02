@@ -69,6 +69,13 @@ h1 {
   height: 170px;
   border-radius: 30px;
 }
+.yelp-link {
+  color: #d82d21;
+}
+.yelp-link:hover {
+  color: #ffc996;
+}
+
 /* ******** ID SELECTORS ******* */
 #title {
   background-color: #f48b29;
