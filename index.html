@@ -45,10 +45,10 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.yelp.com/">Yelp</a>
+              <li class="nav-item navvyitem">
+                <a class="nav-link " href="https://www.yelp.com/">Yelp</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navvyitem">
                 <a class="nav-link" href="https://www.yelp.com/nearme/nightlife">Nightlife</a>
               </li>
             </ul>
@@ -58,7 +58,7 @@
 
         <!-- Title -->
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 showbox">
             <h1>Welcome to Yelp Roulette. Place your bet!</h1>
             <input id="userLocation" class="form-control" type="text" placeholder="Enter city" aria-label="default input example">
             <!-- This is seen by the application, but not when used externally..why? -->
@@ -70,13 +70,18 @@
             <button id="btn" type="button" class="btn btn-dark btn-lg roulette-button" onclick="yelpRoulette()"><i class="fab fa-yelp"></i> Roulette!</button>
           </div>
 
-          <div class="col-lg-6">
-            <h2>Look for your payout!</h2>
+          <div class="col-lg-6 showbox-2">
+            <!-- <h2>Look for your payout!</h2> -->
 
             <!-- this will be for displaying the outout on button click! -->
-            <div id="show-roulette" class="roulette-output">
+            <div id="show-roulette" class="text-center">
+              <h2>Look for your payout!</h2>
+            </div>
+            <div id="show-roulette-image" class="text-center">
               
-              <br>
+            </div>
+            <div id="show-roulette-location" class="text-center">
+              
             </div>
           </div>
         </div>

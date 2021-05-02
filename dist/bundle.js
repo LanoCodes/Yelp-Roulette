@@ -753,10 +753,9 @@ function yelpRoulette() {
     const firstResult = response.jsonBody.businesses[rando];
     const prettyJson = JSON.stringify(firstResult, null, 4);
 
-    // var obj = JSON.parse(prettyJson);
-
-    // document.getElementById("show-roulette").innerHTML = prettyJson;
-    document.getElementById("show-roulette").innerHTML =  "You <em>must</em> now visit...." + '"' + firstResult.name + '!"';
+    document.getElementById("show-roulette").innerHTML =  "You must now visit....<br><br>" + '<h3><em>"' + firstResult.name + '!"</em></h3>';
+    document.getElementById("show-roulette-image").innerHTML = '<img class="restaurant-image" src="' + firstResult.image_url +'" alt="restaurant image">';
+    document.getElementById("show-roulette-location").innerHTML = 'Head to: ' + firstResult.location.display_address;
     console.log(firstResult);
 
   }).catch(e => {
